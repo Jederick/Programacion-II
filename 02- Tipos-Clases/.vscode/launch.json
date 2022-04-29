@@ -7,9 +7,9 @@
         {
             "name": "(gdb) Launch",
             "type": "cppdbg",
-            "request": "launch",
             "preLaunchTask": "Compile the program",
-            "program": "${workspaceFolder}/bin/HolaMundo",
+            "request": "launch",
+            "program": "${workspaceFolder}/bin/final",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
@@ -17,7 +17,6 @@
             "externalConsole": false,
             "MIMode": "gdb",
             "miDebuggerPath": "/usr/bin/gdb"
-            
             
         },
         
