@@ -1,15 +1,25 @@
-#include "Animal.h"
-#include "Perro.h"
-#include "Delfin.h"
+#include "becaCinco.h"
+#include "becaCuatro.h"
+#include "becado.h"
+
 #include <vector>
+#include <iostream>
 
 int main(){
 
-    vector<Animal *> animales;
+    vector<Becado *> becados;
 
-    Perro* animal1 = new Perro(4, "terrestre");
-    Delfin* animal2 = new Delfin(0, "acuatico");
+    BecaCuatro* becado1 = new BecaCuatro(500, "Juan Ortíz");
+    BecaCinco* becado2 = new BecaCinco(250, "Depresión Soledad");
 
-    animales.push_back(animal1);
-    animales.push_back(animal2);
+    becados.push_back(becado1);
+    becados.push_back(becado2);
+
+    for(Becado* becado : becados){
+        cout << becado->obtenerNombre() << " y su deposito total fue de: " << becado->calculoDeposito() << endl;
+    }
+
+    delete becado1;
+    delete becado2;
+
 }
