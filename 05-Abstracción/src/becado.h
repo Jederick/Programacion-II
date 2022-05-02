@@ -12,7 +12,7 @@ class Becado{
 
     public:
     virtual float calculoDeposito() = 0;
-    string obtenerNombre();
+    virtual string obtenerNombre();
 };
 
 #endif

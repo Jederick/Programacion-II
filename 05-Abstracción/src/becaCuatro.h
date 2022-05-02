@@ -12,7 +12,7 @@ class BecaCuatro : public Becado{
     BecaCuatro(float gastosCarrera, string nombre);
     
     virtual float calculoDeposito();
-
+    virtual string obtenerNombre();
 
 };
 #endif  
