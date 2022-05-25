@@ -16,7 +16,8 @@ namespace{
     TEST(Arbol_test, Test_Agregar_Nodo){
         
         Arbol *arbol = new Arbol(2, 1);
-        arbol->insertarValor(5,2);
+
+        arbol->insertarValor(5,2,1);
         
         int esperado = 5;
         int actual = arbol->obtenerValor(2);

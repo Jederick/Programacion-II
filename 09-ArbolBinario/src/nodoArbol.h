@@ -10,15 +10,17 @@ class NodoArbol{
     private:
     int id;
     int valor;
-    vector<NodoArbol> *hijos;
+    vector<NodoArbol *> hijos;
 
     public:
     NodoArbol(int valor, int id);
-
+    ~NodoArbol();
     void insertarHijo(NodoArbol *nuevoHijo);
     
     int obtenerId();
     int obtenerValor();
+
+    vector<NodoArbol *> obtenerHijos();
 
 };
 

@@ -16,7 +16,7 @@ class Arbol{
     Arbol(int valorNodoRaiz, int idNodo);
     ~Arbol();
 
-    void insertarValor(int nuevoValor, int nuevaIdNodo);
+    void insertarValor(int nuevoValor, int nuevaIdNodo, int idPadre);
 
     int obtenerValor(int idNodo);
 };
