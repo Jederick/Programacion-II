@@ -13,7 +13,8 @@ make test:
 	g++ $(FLAGS) src/arbol.cpp -o bin/arbol.o
 	g++ $(FLAGS) src/nodoArbol.cpp -o bin/nodoArbol.o
 	g++ $(FLAGS) tests/arbol_tests.cpp -o bin/arbol_tests.o
-	g++ -g -o bin/test bin/arbol_tests.o bin/arbol.o bin/nodoArbol.o -lgtest -lgtest_main -lpthread 
+	g++ $(FLAGS) tests/nodoArbol_tests.cpp -o bin/nodoArbol_tests.o
+	g++ -g -o bin/test bin/arbol_tests.o bin/nodoArbol_tests.o bin/arbol.o bin/nodoArbol.o -lgtest -lgtest_main -lpthread 
 
 clean:
 	rm -Rf bin

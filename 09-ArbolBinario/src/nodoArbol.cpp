@@ -10,3 +10,11 @@ void NodoArbol::insertarHijo(NodoArbol *nuevoHijo){
 
 
 }
+
+int NodoArbol::obtenerId(){
+    return this->id;
+}
+
+int NodoArbol::obtenerValor(){
+    return this->valor;
+}

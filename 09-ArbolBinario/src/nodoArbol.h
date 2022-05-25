@@ -14,7 +14,11 @@ class NodoArbol{
 
     public:
     NodoArbol(int valor, int id);
+
     void insertarHijo(NodoArbol *nuevoHijo);
+    
+    int obtenerId();
+    int obtenerValor();
 
 };
 
