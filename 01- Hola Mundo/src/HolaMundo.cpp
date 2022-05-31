@@ -2,7 +2,7 @@
 
 int main() {
 
-    std::cout << "Tengo hambre, y por cierto, hola mundo jiojio \n";
+    std::cout << "hehe \n";
     return 0;
 
 
