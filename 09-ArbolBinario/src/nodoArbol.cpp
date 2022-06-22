@@ -6,7 +6,7 @@ NodoArbol::NodoArbol(int nuevoValor, int nuevaId){
 }
 
 NodoArbol::~NodoArbol(){
-
+    
 }
 
 void NodoArbol::insertarHijo(NodoArbol *nuevoHijo){

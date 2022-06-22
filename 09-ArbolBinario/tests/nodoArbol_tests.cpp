@@ -5,6 +5,7 @@ namespace{
 
    TEST(NodoArbol_Test, Test_Inicializar_Nodo){
         
+        
         NodoArbol *nodoArbol = new NodoArbol(1, 1);
         
         int esperado = 1;

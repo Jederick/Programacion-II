@@ -5,7 +5,7 @@ namespace{
 
     TEST(CuentaPalabras_Test, Test_Una_Linea){
         
-        string linea = "Esta es una linea de texto jio jio";
+        string linea = "Esta es una linea de texto";
         istringstream stream(linea);
 
         CuentaPalabras cuentaPalabras(&stream);
