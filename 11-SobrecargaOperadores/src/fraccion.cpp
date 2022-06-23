@@ -8,6 +8,41 @@ Fraccion::Fraccion(int _numerador, int _denominador){
 Fraccion::~Fraccion(){
 }
 
+float Fraccion::toFloat(){
+    
+    return (float)this->numerador / (float)this->denominador;
+}
+
+bool Fraccion::operator == (Fraccion &fraccion){
+    bool resultado = this->toFloat() == fraccion.toFloat();
+    return resultado;
+}
+
+bool Fraccion::operator != (Fraccion &fraccion){
+    bool resultado = this->toFloat() != fraccion.toFloat();
+    return resultado;
+}
+
+bool Fraccion::operator < (Fraccion &fraccion){
+    bool resultado = this->toFloat() < fraccion.toFloat();
+    return resultado;
+}
+
+bool Fraccion::operator > (Fraccion &fraccion){
+    bool resultado = this->toFloat() > fraccion.toFloat();
+    return resultado;
+}
+
+bool Fraccion::operator <= (Fraccion &fraccion){
+    bool resultado = this->toFloat() <= fraccion.toFloat();
+    return resultado;
+}
+
+bool Fraccion::operator >= (Fraccion &fraccion){
+    bool resultado = this->toFloat() >= fraccion.toFloat();
+    return resultado;
+}
+
 istream& operator >> (istream &entrada, Fraccion *fraccion){
     return entrada;
 }
@@ -30,4 +65,12 @@ Fraccion* operator + (Fraccion &fraccion1, Fraccion &fraccion2){
     }
     Fraccion *fraccion = new Fraccion(nuevoNumerador, nuevoDenominador);
     return fraccion;
+}
+
+Fraccion* operator + (Fraccion &fraccion1, int entero){
+    Fraccion *nuevaFraccion = new Fraccion(entero,1);
+    Fraccion *resultado = fraccion1 + *(nuevaFraccion);
+
+    delete nuevaFraccion;
+    return resultado;
 }
