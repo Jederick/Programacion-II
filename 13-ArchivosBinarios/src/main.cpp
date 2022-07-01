@@ -11,7 +11,7 @@ int main(){
     Planilla *planilla = new Planilla(); 
 
 
-    Empleado *empleado = new Empleado(1, 20, "alekir");
+    Empleado *empleado = new Empleado(1, 20, "alxol");
     Empleado *empleado2 = new Empleado(2, 40, "apopo");
     Empleado *empleado3 = new Empleado(3, 10, "bejger");
     Empleado *empleado4 = new Empleado(4, 65412, "aguacate");
@@ -41,7 +41,7 @@ int main(){
         return -1;
     }
 
-    planilla->cargarDesdeStreamBinario(&archivoEntrada);
+    planilla->cargarDesdeStreamBinarioPorId(&archivoEntrada, 2);
     cout << planilla;
 
     delete planilla;

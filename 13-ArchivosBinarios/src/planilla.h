@@ -19,7 +19,7 @@ class Planilla{
     void agregarEmpleado(Empleado* nuevoEmpleado);
     void salidaEnSteamBinario(ostream *streamSalida);
     void cargarDesdeStreamBinario(istream *streamEntrada);
-
+    void cargarDesdeStreamBinarioPorId(istream *streamEntrada, int idEmpleado);
 
     friend ostream& operator << (ostream &salida, const Planilla *planilla);
 };

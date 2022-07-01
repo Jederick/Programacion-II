@@ -19,6 +19,16 @@ void Planilla::salidaEnSteamBinario(ostream *streamSalida){
     }
 }
 
+void Planilla::cargarDesdeStreamBinarioPorId(istream *streamEntrada, int idEmpleado){
+
+    streamEntrada->seekg( (idEmpleado * sizeof(Empleado) ) - sizeof(Empleado));
+
+    Empleado *empleado = new Empleado();
+    streamEntrada->read((char * )empleado, sizeof(Empleado) );
+
+    this->agregarEmpleado(empleado);
+}
+
 void Planilla::cargarDesdeStreamBinario(istream *streamEntrada){
     streamEntrada->seekg(0, ios::end);
     int cantidadBytes = streamEntrada->tellg();
