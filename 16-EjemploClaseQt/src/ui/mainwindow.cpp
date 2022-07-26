@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "./../calculadoraLocal/calculadoralocal.h"
+#include "./../../lib/include/tienda.h"
+#include "./../../lib/include/producto.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -15,13 +16,16 @@ MainWindow::~MainWindow()
 }
 
 
-void MainWindow::on_btnMultiplicarLocal_clicked()
+void MainWindow::on_btnCrearTienda_clicked()
 {
-    CalculadoraLocal *calc = new CalculadoraLocal();
-    int resultado = calc->multiplicar(8,5);
+    QString nombreTienda = this->ui->txtNombreTienda->text();
+    QString paginaWeb = this->ui->txtPaginaWeb->text();
+    QString direccionFisica = this->ui->txtDireccionFisica->text();
+    QString numeroTelefono = this->ui->txtNumeroTelefono->text();
+    Tienda *tienda = new Tienda(nombreTienda.toStdString(), paginaWeb.toStdString(), direccionFisica.toStdString(), numeroTelefono.toStdString());
 
-    QString stringResultado = QString::number(resultado);
-    this->ui->labelResultado->setText(stringResultado);
 
-    delete calc;
+    delete tienda;
 }
+
+

@@ -16,7 +16,8 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_btnMultiplicarLocal_clicked();
+
+    void on_btnCrearTienda_clicked();
 
 private:
     Ui::MainWindow *ui;

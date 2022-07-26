@@ -6,47 +6,139 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1106</width>
+    <height>648</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="btnMultiplicarLocal">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>160</y>
-      <width>191</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Multiplicar</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>140</y>
-      <width>71</width>
-      <height>21</height>
+      <x>260</x>
+      <y>30</y>
+      <width>251</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="text">
-     <string>Resultado:</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Bienvenido al sistema de Tiendas&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;¿Qué desea hacer?&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QLabel" name="labelResultado">
+   <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>60</x>
       <y>140</y>
-      <width>111</width>
-      <height>21</height>
+      <width>221</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nombre de su nueva Tienda:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtNombreTienda">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>190</y>
+      <width>141</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>220</y>
+      <width>221</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Página web de su nueva tienda:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtPaginaWeb">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>270</y>
+      <width>141</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtDireccionFisica">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>350</y>
+      <width>141</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>300</y>
+      <width>241</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Direccion fisica de su nueva tienda:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtNumeroTelefono">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>430</y>
+      <width>141</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>380</y>
+      <width>281</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Número de telefono de su nueva tienda: </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCrearTienda">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>260</y>
+      <width>121</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CREAR TIENDA</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblInfoTienda">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>150</y>
+      <width>541</width>
+      <height>71</height>
      </rect>
     </property>
     <property name="text">
@@ -59,7 +151,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>1106</width>
      <height>25</height>
     </rect>
    </property>
